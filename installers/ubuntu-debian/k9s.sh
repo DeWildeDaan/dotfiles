@@ -2,10 +2,12 @@
 set -e
 
 echo "Installing k9s..."
-LATEST=$(curl -s https://api.github.com/repos/derailed/k9s/releases/latest | grep browser_download_url | grep Linux_x86_64.tar.gz | cut -d '"' -f 4)
+LATEST=$(curl -s https://api.github.com/repos/derailed/k9s/releases/latest | grep browser_download_url | grep 'k9s_Linux_amd64.tar.gz"' | head -n 1 | cut -d '"' -f 4)
+TARBALL=$(basename "$LATEST")
 curl -LO "$LATEST"
-tar -zxvf k9s_Linux_amd64.tar.gz
-sudo mv k9s /usr/local/bin/k9s 
+tar -xzf "$TARBALL"
+sudo mv k9s /usr/local/bin/k9s
+rm "$TARBALL"
 echo "k9s installed."
 
 # Set up plugins.yaml
