@@ -1,0 +1,21 @@
+alias ohmyzsh="nano ~/.zshrc"
+
+alias gco='git checkout'
+alias ga='git add -A'
+alias gp='git pull'
+alias gps='git push'
+alias gc='git commit'
+
+alias tf='terraform'
+alias tg='terragrunt'
+alias otf='opentofu'
+
+alias la='ls -la'
+
+alias goto_code='cd /mnt/c/Development'
+alias home='cd ~'
+
+alias vsc='code .'
+alias eksc='aws eks update-kubeconfig --name'
+alias tmuxk='tmux kill-session -a'
+alias ctx='kubectx'
