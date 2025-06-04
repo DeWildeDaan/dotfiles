@@ -4,7 +4,7 @@ set -e
 echo "Installing Zsh..."
 #install zsh
 sudo apt update
-sudo apt install zsh
+sudo apt install zsh -y
 #verfiy zsh version 
 zsh --version
 #switch to zsh shell and configure shell to your needs and save it 
