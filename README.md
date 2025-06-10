@@ -1,5 +1,8 @@
 # dotfiles
-Repository containing handy dotfiles and configfiles for setting up a new ubuntu env
+Repository containing handy dotfiles and configfiles for setting up a new ubuntu env.
+Start by installing all wanted software located in the `/installers/...` folder.
+Best is to install ZSH and oh-my-zsh first, then the plugins and other software.
+Once all software is installed, you can copy the dotfiles/config to the right place using the `copy-config.sh` script in the root of the repo.
 
 # Installing Fonts
 1. Go to the [Powerline Fonts](https://github.com/powerline/fonts) Github page.
@@ -14,3 +17,15 @@ Window Key + X then select “Windows PowerShell (Admin)”. Click “Yes” whe
 9. Now we can run the `install.ps1` file! Type `.\install.ps1`. If you are Installing a newer version, you will likely be prompted for every font that is replaced. (I should look into that.) Otherwise new fonts will be installed.
 10. Just to be sure, reset the Execution Policy back to the Default setting. `Set-ExecutionPolicy Default` then type y for Yes like before.
 11. In the settings of your terminal application; select any font that includes `... for Powerline`
+
+# Connecting to GitHub
+To to able to create pull requests etc from within the terminal, you need to install the GitHub CLI:
+```bash
+sudo apt install gh
+```
+Then you need to login to your GitHub account:
+```bash
+gh auth login
+```
+Just follow the instructions, and configure as you need.
+(github.com, HTTPS, login with web browser,...)
