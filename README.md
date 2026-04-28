@@ -20,11 +20,12 @@ Window Key + X then select “Windows PowerShell (Admin)”. Click “Yes” whe
 
 # Windows Terminal Defaults
 Some defaults I like to use with the `Windows Terminal` application.
-1. Profile config
-  1.1. When opening the **Settings tab**, select the `Ubuntu/WSL` profile as default profile.
-  1.2 Navigate to the **Ubuntu/WSL profile**, and add `tmux` at the end of the **Command Line** section.
-2. Appearance
-  2.1. Navigate to the **Defaults profile** and then **Appearance**, Then I like to use the `One Half Dark theme` together with the `Ubuntu Mono derivative Powerline` font.
+### Profile config
+1. When opening the **Settings tab**, select the `Ubuntu/WSL` profile as default profile.
+2. avigate to the **Ubuntu/WSL profile**, and add `tmux` at the end of the **Command Line** section.
+
+### Appearance
+1. Navigate to the **Defaults profile** and then **Appearance**, Then I like to use the `One Half Dark theme` together with the `Ubuntu Mono derivative Powerline` font.
 
 # Connecting to GitHub
 To to able to create pull requests etc from within the terminal, you need to install the GitHub CLI:
